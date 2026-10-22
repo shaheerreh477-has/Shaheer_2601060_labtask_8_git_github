@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form class="form-box">
+    <h1>Student Registration Form</h1>
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Full name" required>
+
+    <label>Father's Name</label>
+    <input type="text" placeholder="Father's name" required>
+
+    <label>Registration Number</label>
+    <input type="text" placeholder="e.g. 2026-BSSE-001" required>
+
+    <label>Email Address</label>
+    <input type="email" placeholder="Email address" required>
+
+    <label>Password</label>
+    <input type="password" placeholder="Password" required>
+
+    <label>Confirm Password</label>
+    <input type="password" placeholder="Confirm password" required>
+
+    <label>Date of Birth</label>
+    <input type="date" required>
+
+    <label>Gender</label>
+    <div>
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender"> Female
+    </div>
+
+    <label>Department</label>
+    <select required>
+        <option value="">-- Select --</option>
+        <option>BSSE</option>
+        <option>BSAI</option>
+        <option>BSDS</option>
+        <option>BSCS</option>
+    </select>
+
+    <label>Semester</label>
+    <select required>
+        <option value="">-- Select --</option>
+        <option>1st</option><option>2nd</option><option>3rd</option><option>4th</option>
+        <option>5th</option><option>6th</option><option>7th</option><option>8th</option>
+    </select>
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="03001234567" required>
+
+    <label>Permanent Address</label>
+    <textarea rows="3" placeholder="Permanent address" required></textarea>
+
+    <label>Profile Picture</label>
+    <input type="file" accept="image/*">
+
+    <div>
+        <input type="checkbox" required> I agree to the Terms and Conditions
+    </div>
+
+    <button type="submit" class="btn register">Register</button>
+    <button type="reset" class="btn reset">Reset</button>
+</form>
+</body>
+</html>
